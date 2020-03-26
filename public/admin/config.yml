@@ -16,7 +16,7 @@ collections:
           widget: "relation"
           collection: "pages"
           searchFields: ["title"]
-          valueField: "title"
+          valueField: "name"
 
   - name: "pages"
     label: "Pages"
@@ -24,6 +24,7 @@ collections:
     create: true
     folder: "content"
     fields:
+      - { label: "ID", name: "id", widget: "string"}
       - { label: "Title", name: "title", widget: "string"}
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Image", name: "image", widget: "image"}
