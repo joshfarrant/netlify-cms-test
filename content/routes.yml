@@ -1,0 +1,5 @@
+routes:
+  - page: home
+    slug: /
+  - page: badgers
+    slug: /badger
