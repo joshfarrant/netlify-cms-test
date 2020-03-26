@@ -26,8 +26,8 @@ collections:
         label: "Routes"
         file: "content/routes.yml"
         fields:
-        - label: "Home Page"
-          name: "home_page"
+        - label: "Pages"
+          name: "pages"
           widget: "list"
           fields:
             - { label: "Slug", name: "slug", widget: "string"}
