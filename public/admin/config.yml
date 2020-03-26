@@ -4,6 +4,20 @@ backend:
 media_folder: public/img
 public_folder: img
 collections:
+  - name: "global-config"
+    label: "Global Config"
+    files:
+      - name: "site-config"
+        label: "Site Config"
+        file: "content/site-config.yml"
+        fields:
+        - label: "Home Page"
+          name: "home-page"
+          widget: "relation"
+          collection: "pages"
+          searchFields: ["title"]
+          valueField: "title"
+
   - name: "pages"
     label: "Pages"
     identifier_field: "slug"
@@ -11,7 +25,6 @@ collections:
     folder: "content"
     fields:
       - { label: "Title", name: "title", widget: "string"}
-      - { label: "Slug", name: "slug", widget: "string"}
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Image", name: "image", widget: "image"}
       - { label: "Body", name: "body", widget: "markdown"}
