@@ -5,6 +5,10 @@ module.exports = {
         test: /\.md$/,
         loader: 'frontmatter-markdown-loader',
         options: { mode: ['react-component'] },
+      }, {
+        test: /\.ya?ml$/,
+        type: 'json',
+        use: 'yaml-loader'
       },
     );
     return cfg;

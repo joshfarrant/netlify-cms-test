@@ -1,6 +1,6 @@
 ---
-id: "ae645a01-bd26-4668-9b7a-4615ad325320"
-title: "Awesome kitties \U0001F638 [v2]"
+name: home
+title: Awesome kitties \U0001F638 [v2]
 date: 2019-03-17T19:31:20.591Z
 cats:
   - description: Lil Bub is an American celebrity cat known for her unique appearance.
