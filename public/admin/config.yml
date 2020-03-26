@@ -12,13 +12,33 @@ collections:
         file: "content/site-config.yml"
         fields:
         - label: "Home Page"
-          name: "home-page"
+          name: "home_page"
           widget: "relation"
           collection: "pages"
-          displayFields: ["name", "title"]
-          searchFields: ["title"]
+          displayFields: ["name"]
+          searchFields: ["name", "title"]
           valueField: "name"
 
+  - name: "routes"
+    label: "Routes"
+    files:
+      - name: "routes"
+        label: "Routes"
+        file: "content/routes.yml"
+        fields:
+        - label: "Home Page"
+          name: "home_page"
+          widget: "list"
+          fields:
+            - { label: "Slug", name: "slug", widget: "string"}
+            - label: "Page"
+              name: "page"
+              widget: "relation"
+              collection: "pages"
+              displayFields: ["name"]
+              searchFields: ["name", "title"]
+              valueField: "name"
+              
   - name: "pages"
     label: "Pages"
     identifier_field: "name"
