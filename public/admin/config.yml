@@ -16,7 +16,7 @@ collections:
           widget: "relation"
           collection: "pages"
           searchFields: ["title"]
-          valueField: "name"
+          valueField: "id"
 
   - name: "pages"
     label: "Pages"
